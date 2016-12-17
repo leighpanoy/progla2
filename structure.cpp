@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-struct Person
-{
+struct Person{
 	int toes;
 	int knees;
 	int shoulder;
