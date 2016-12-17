@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+struct Person{
+	int toes;
+	int knees; 
+	int shoulder;
+	int head;
+};
+int main(){
+	Person pe[5];
+	for (int i=0; i<5; i++){
+	cin>>pe[i].toes;
+	cin>>pe[i].knees;
+	cin>>pe[i].shoulder;
+	cin>>pe[i].head;
+	}
+	for (int i=0; i<5; i++){
+	cout<<"Toes: "<<pe[i].toes<<endl;
+	cout<<"Knees: "<<pe[i].knees<<endl;
+	cout<<"Shoulder:"<<pe[i].shoulder<<endl;
+	cout<<"Head: "<<pe[i].head<<endl;
+	}
+	return 0;
+}
