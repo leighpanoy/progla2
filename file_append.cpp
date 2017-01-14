@@ -11,4 +11,11 @@ main()
         fscanf(myFile, "%d", &numberArray[i]);
         sum+=numberArray[i];
     }
+    fclose(myFile);
+    myFile = fopen("sample.txt", "a");
+    for(int i=0; i<5; i++){
+		fprintf(myFile, "%d", numberArray[i]+4);
+		fprintf(myFile, "\n");
+    }
+}
     
