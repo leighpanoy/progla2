@@ -2,7 +2,7 @@
 using namespace std;
 main(){
     FILE *myFile;
-    myFile = fopen("sample1.txt", "r");
+    myFile = fopen("sample.txt", "r");
     //read file into array
     int i,num;
     int numberArray[5];
