@@ -1,0 +1,72 @@
+#include<iostream>
+#include<iostream>
+#include<string>
+using namespace std;
+
+class user{
+	public:
+		char name[50];
+		int id_num;  
+};
+
+class student: public user{
+	public:
+		int num_of_subjects;
+		int num_books;	
+};
+
+class Prof: public user{
+	public:
+		int tin;
+};
+class Staff: public user{
+	public:
+		int sss;
+};
+
+int main(){
+	student stud;
+	cout<<" Enter Student Name:";
+	cin.getline(stud.name, 49);
+	system("cls");
+	cout<<"Enter Student ID Number:";
+	cin>> stud.id_num;
+	system("cls");
+	cout<< "Number Of Subjects:";
+	cin>> stud.num_of_subjects;
+	system("cls");
+	cout<< "Number Of Books:";
+	cin>> stud.num_books;
+	cout<<endl;
+	system("cls");
+	Prof prof;
+	cout<<"Enter Prof Name:";
+	cin>> prof.name;
+	system("cls");
+	cout<<"Enter Prof ID Number:";
+	cin>> prof.id_num;
+	system("cls");
+	cout<< "Enter TIN:";
+	cin>> prof.tin;
+	cout<<endl;
+	system("cls");
+	Staff staff;
+	cout<<"Enter Staff Name:";
+	cin>> staff.name;
+	system("cls");
+	cout<<"Enter Staff ID Number:";
+	cin>> staff.id_num;
+	system("cls");
+	cout<< "Enter SSS:";
+	cin>> staff.sss;
+	cout<<endl;
+	system("cls");
+	
+	cout<<"\t\t\tUser Info:"<<endl;
+	cout<<"Student Number: "<<stud.name<<endl;
+	cout<<"Student ID Number: "<<stud.id_num<<endl;
+	cout<<"Number Of Subject: "<<stud.num_of_subjects<<endl;
+	cout<<"Number Of Books: "<<stud.num_books<<endl;
+	
+	return 0;	
+}
